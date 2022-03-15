@@ -2,7 +2,7 @@ name: Scrape
 
 on:
   schedule:
-    - cron: "0 18 * * *" # 6 p.m. every day UTC
+    - cron: "30 18 * * *" # 6:30 p.m. every day UTC
   workflow_dispatch:
 
 jobs:
@@ -16,9 +16,9 @@ jobs:
       with:
         python-version: '3.9'
         cache: 'pipenv'
-    - run: pipenv install jupyter requests bs4 --python `which python`
+    - run: pipenv install pandas requests bs4 --python `which python`
     - name: Run scraper
-      run: pipenv run jupyter execute scrape.ipynb
+      run: pipenv run python3 gas.py
     - name: Add and commit
       id: add_commit
       uses: EndBug/add-and-commit@v8
