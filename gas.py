@@ -62,7 +62,7 @@ def priceScraper(url):
     print()
     print("Fort Lauderdale's average gas prices a month ago were: \n" + "Regular: " + ftLaudMonthReg + "\n" + "Diesel: " + ftLaudMonthDiesel)
     print("-----------------------------------------------------")
-    print("Florida's current average gas prices are: \n" + "Regular: " + flCurrentReg + "\n" + "Diesel: " + flCurrentDiesel)
+    print("Florida's current average gas prices are: \n" + "Regular: " + flReg + "\n" + "Diesel: " + flDiesel)
     print()
     print("The state's average gas prices a month ago were: \n" + "Regular: " + flMonthReg + "\n" + "Diesel: " + flMonthDiesel)
     '''
