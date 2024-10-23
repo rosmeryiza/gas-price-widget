@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-bs4 = "*"
-requests = "*"
 pandas = "*"
+requests = "*"
+bs4 = "*"
 
 [dev-packages]
 
